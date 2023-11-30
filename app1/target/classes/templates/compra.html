@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" th:object="${compraForm}" method="post" enctype="multipart/form-data;charset=utf8">
+    <div>
+        <label for="precio">Precio</label>
+        <input th:field="*{precio}" type="number" step="0.01" id="precio" required>
+        <span th:if = "${#fields.hasErrors('precio')}" th:errors="*{precio}" ></span>
+    </div>
+    <div>
+        <label for="desc">Descripcion</label>
+        <input th:field="*{desc}" type="text"  id="desc" required>
+    </div>
+    <div>
+        <input type="submit" name="submit" value="Enviar">
+    </div>
+</form>
+
+</body>
+</html>

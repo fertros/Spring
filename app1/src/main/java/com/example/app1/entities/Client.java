@@ -15,7 +15,9 @@ public class Client {
     @Getter @Setter private int id;
     @Getter @Setter private String name;
 
-
+    public int getCodigo(){
+        return id;
+    }
     public Client(String name) {
         this.name = name;
     }
