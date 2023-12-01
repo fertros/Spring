@@ -1,0 +1,6 @@
+com\example\appjpa\repository\AuthorRepository.class
+com\example\appjpa\entity\Author.class
+com\example\appjpa\controller\AuthorControler.class
+com\example\appjpa\AppjpaApplication.class
+com\example\appjpa\config\initConfig.class
+com\example\appjpa\entity\Book.class
